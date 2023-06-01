@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="output.css" rel="stylesheet" />
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
+  <body
+    class="flex items-center justify-center h-screen bg-custom-very-light-blue font-hanken"
+  >
+    <div
+      class="md:grid md:grid-cols-2 bg-white m-auto max-w-3xl md:shadow-lg md:rounded-2xl"
+      style="box-shadow: 0px 30px 60px rgba(61, 108, 236, 0.15)"
+    >
+      <section
+        class="rounded-b-3xl md:rounded-3xl flex flex-col items-center justify-center text-center md:w-368"
+        style="
+          background: linear-gradient(
+            180deg,
+            #7755ff 0%,
+            #6943ff 0.01%,
+            #2f2ce9 100%
+          );
+        "
+      >
+        <header>
+          <h1
+            class="py-6 md:py-9 text-custom-light-blue font-hanken font-bold text-lg md:text-2xl"
+          >
+            Your Result
+          </h1>
+          <p
+            class="h-140 w-140 md:h-200 md:w-200 rounded-full bg-white flex flex-col items-center justify-center"
+            style="
+              background: linear-gradient(
+                180deg,
+                #4d21c9 0%,
+                rgba(37, 33, 201, 0) 100%,
+                rgba(37, 33, 201, 0) 100%
+              );
+            "
+          >
+            <span
+              class="text-56 leading-72 md:text-7xl text-white font-extrabold font-hanken"
+              >76</span
+            ><span
+              class="font-bold text-base md:text-lg md:mt-1 leading-23 text-custom-light-blue mix-blend-normal opacity-50"
+              >of 100</span
+            >
+          </p>
+        </header>
+
+        <section
+          class="pb-10 mt-6 md:mt-7 px-14 flex flex-col items-center justify-center"
+        >
+          <h2 class="text-white font-bold text-2xl md:text-32 md:leading-42">
+            Great
+          </h2>
+          <p
+            class="font-medium text-base leading-21 md:text-lg text-custom-light-blue mt-2 md:mt-3.5 md:leading-23"
+          >
+            Your performance exceed 65% of the people conducting the test here!
+          </p>
+        </section>
+      </section>
+      <section class="py-6 px-8 leading-23 md:p-38 md:rounded-3xl">
+        <h2 class="text-custom-dark-navy font-bold text-lg md:text-2xl">
+          Summary
+        </h2>
+        <dl
+          class="py-6 md:pt-7 md:pb-10 flex flex-col space-y-4 md:text-lg md:leading-6"
+        >
+          <div
+            class="flex items-center p-4 justify-between rounded-xl"
+            style="
+              background: linear-gradient(
+                  0deg,
+                  rgba(255, 255, 255, 0.95),
+                  rgba(255, 255, 255, 0.95)
+                ),
+                #ff5555;
+            "
+          >
+            <dt class="flex items-center justify-center text-custom-red">
+              <div>
+                <img
+                  class
+                  src="./assets/images/icon-reaction.svg"
+                  alt="Reaction"
+                />
+              </div>
+              <span class="pl-3 font-medium">Reaction</span>
+            </dt>
+            <dd>
+              <span class="font-bold text-custom-dark-navy pr-2">80</span
+              ><span class="opacity-50"> / 100</span>
+            </dd>
+          </div>
+
+          <div
+            class="flex items-center p-4 justify-between rounded-xl"
+            style="
+              background: linear-gradient(
+                  0deg,
+                  rgba(255, 255, 255, 0.95),
+                  rgba(255, 255, 255, 0.95)
+                ),
+                #ffb21e;
+            "
+          >
+            <dt class="flex items-center justify-center text-custom-yellow">
+              <img class src="./assets/images/icon-memory.svg" alt="Reaction" />
+              <span class="mr-2 pl-3 font-medium">Memory</span>
+            </dt>
+            <dd>
+              <span class="font-bold text-custom-dark-navy pr-2">92</span
+              ><span class="opacity-50"> / 100</span>
+            </dd>
+          </div>
+
+          <div
+            class="flex items-center p-4 justify-between rounded-xl"
+            style="
+              background: linear-gradient(
+                  0deg,
+                  rgba(255, 255, 255, 0.95),
+                  rgba(255, 255, 255, 0.95)
+                ),
+                #00bb8f;
+            "
+          >
+            <dt class="flex items-center justify-center text-custom-green">
+              <img class src="./assets/images/icon-verbal.svg" alt="Reaction" />
+              <span class="mr-2 pl-3 font-medium">Verbal</span>
+            </dt>
+            <dd>
+              <span class="font-bold text-custom-dark-navy pr-2">61</span
+              ><span class="opacity-50"> / 100</span>
+            </dd>
+          </div>
+
+          <div
+            class="flex items-center p-4 justify-between rounded-xl"
+            style="
+              background: linear-gradient(
+                  0deg,
+                  rgba(255, 255, 255, 0.95),
+                  rgba(255, 255, 255, 0.95)
+                ),
+                #1125d6;
+            "
+          >
+            <dt class="flex items-center justify-center text-custom-blue">
+              <img class src="./assets/images/icon-visual.svg" alt="Reaction" />
+              <span class="mr-2 pl-3 font-medium">Visual</span>
+            </dt>
+            <dd>
+              <span class="font-bold text-custom-dark-navy pr-2">73</span
+              ><span class="opacity-50"> / 100</span>
+            </dd>
+          </div>
+        </dl>
+        <button
+          class="my-button bg-custom-dark-navy rounded-full py-4 font-bold text-lg text-white w-full md:leading-6"
+        >
+          Continue
+        </button>
+      </section>
+    </div>
+  </body>
+</html>
